@@ -1,0 +1,31 @@
+.claude/*
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+
+# Data (raw dataset is too large for git)
+data/raw/
+data/processed/
+
+# Keep only the multimodal checkpoint, ignore others
+checkpoints/*
+!checkpoints/best_model_multimodal.pth
+
+# Results (keep directory, ignore generated files)
+results/*.png
+results/*.json
+results/*.txt
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# uv
+uv.lock
